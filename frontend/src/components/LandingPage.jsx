@@ -1048,8 +1048,14 @@ const LandingPage = ({ onEnter }) => {
                 my laptop lid 👀
               </div>
 
-              <div className="bubble-time">
+              <div className="bubble-meta">
+              <span className="bubble-time">
                 10:43 AM
+              </span>
+              <div className="bubble-status">
+                <span>Read</span>
+                <span className="info-icon">i</span>
+              </div>
               </div>
 
               </div>

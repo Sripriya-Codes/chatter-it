@@ -1876,8 +1876,22 @@ body {
   line-height: 1.4;
 }
 
+.landing .bubble-meta {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  margin-top: 7px;
+
+  gap: 5px;
+}
+
 .landing .bubble-time {
   display: block;
+
+  width: 100%;
 
   margin-top: 16px;
 
@@ -1887,7 +1901,50 @@ body {
 
   line-height: 1;
 
-  color: #7c8799;
+  color: #52627a;
+}
+
+.landing .bubble-status {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 7px;
+
+  font-size: 0.68rem;
+
+  line-height: 1;
+
+  color: #16a995;
+}
+
+.landing .info-icon {
+  width: 17px;
+
+  height: 17px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border: 1px solid
+    rgba(82, 98, 122, 0.35);
+
+  color: #52627a;
+
+  font-size: 0.65rem;
+
+  font-family:
+    'Space Grotesk',
+    sans-serif;
+
+  font-weight: 500;
 }
 
 .landing .bubble.left {
