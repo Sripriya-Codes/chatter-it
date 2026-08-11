@@ -1162,14 +1162,22 @@ const LandingPage = ({ onEnter }) => {
 
         <footer>
 
-          <span className="foot-brand">
-            Chatter-It
+          <div className="foot-left">
+            <span className="foot-brand">
+              Chatter-It
+            </span>
+
+            <span className="foot-tag">
+              Real-time chat · React ·
+              Node · Socket.io
+            </span>
+          </div>
+
+          <span className="foot-copyright">
+            © {new Date().getFullYear()} D.Sripriya · All rights reserved
           </span>
 
-          <span className="foot-tag">
-            Real-time chat · React ·
-            Node · Socket.io
-          </span>
+          <span></span>
 
         </footer>
 

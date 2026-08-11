@@ -2353,13 +2353,11 @@ body {
     1px solid
     rgba(20, 26, 36, 0.1);
 
-  display: flex;
+  display: grid;
+
+  grid-template-columns: 1fr auto 1fr;
 
   align-items: center;
-
-  justify-content: space-between;
-
-  flex-wrap: wrap;
 
   gap: 20px;
 }
@@ -2378,8 +2376,21 @@ body {
 
 .landing footer .foot-tag {
   color: #5b6478;
-
   font-size: 0.82rem;
+}
+
+.foot-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-self: start;
+}
+
+.landing footer .foot-copyright {
+  color: #8a93a6;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+  justify-self: center;
 }
 
 
