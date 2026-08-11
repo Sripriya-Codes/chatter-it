@@ -1041,10 +1041,16 @@ const LandingPage = ({ onEnter }) => {
                     '0.9s',
                 }}
               >
-
+              
+              <div className="bubble-message">
                 yep! reconnected
                 instantly after I closed
                 my laptop lid 👀
+              </div>
+
+              <div className="bubble-time">
+                10:43 AM
+              </div>
 
               </div>
 
@@ -1057,8 +1063,16 @@ const LandingPage = ({ onEnter }) => {
                 }}
               >
 
+                <b>arjun_dev</b>
+
+                <div className="bubble-message">
                 nice, testing the typing
                 indicator now...
+                </div>
+
+                <div className="bubble-time">
+                  10:44 AM
+                </div>
 
               </div>
 

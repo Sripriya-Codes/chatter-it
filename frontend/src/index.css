@@ -1687,13 +1687,31 @@ body {
 }
 
 .landing .demo-titlebar .dot {
-  width: 9px;
-
-  height: 9px;
+  width: 10px;
+  height: 10px;
 
   border-radius: 50%;
 
-  background: #c7cedb;
+  box-shadow:
+    0 1px 6px rgba(59, 107, 240, 0.15);
+}
+
+.landing .demo-titlebar .dot:nth-child(1) {
+  background: #35e5c1;
+  box-shadow:
+    0 1px 6px rgba(53, 229, 193, 0.35);
+}
+
+.landing .demo-titlebar .dot:nth-child(2) {
+  background: #3b6bf0;
+  box-shadow:
+    0 1px 6px rgba(59, 107, 240, 0.35);
+}
+
+.landing .demo-titlebar .dot:nth-child(3) {
+  background: #806de1;
+  box-shadow:
+    0 1px 6px rgba(128, 109, 225, 0.35);
 }
 
 .landing .demo-body {
