@@ -4,7 +4,9 @@
 
 <h1 align="center">Chatter-It</h1>
 
-<p align="center">Real-time chat app built with React, Node.js, Express, and Socket.io.</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Chatter--It-Real--Time%20Chat-2dd8b8?style=for-the-badge&logo=socket.io&logoColor=white" alt="Chatter-It badge"/>
+</p>
 
 A real-time chat application built with React and Node.js, using Socket.io for instant, bidirectional communication. Includes an animated Three.js landing page, live typing indicators, online presence tracking, and persistent chat history via MongoDB.
 
@@ -96,7 +98,7 @@ Create a `.env` file in `backend/` with the variables listed below, then run:
 npm run dev
 ```
 
-Runs on `http://localhost:5000` by default.
+Runs on `http://localhost:5050` by default.
 
 ### Frontend
 
