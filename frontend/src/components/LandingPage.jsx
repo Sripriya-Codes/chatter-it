@@ -1019,13 +1019,18 @@ const LandingPage = ({ onEnter }) => {
               >
 
                 <b>
-                  arjun_dev:
+                  arjun_dev
                 </b>{' '}
-
+                
+                <div className="bubble-message">
                 hey! is the socket
                 connection stable on
                 your end?
+                </div>
 
+                <div className="bubble-time">
+                  10:42 AM
+                </div>
               </div>
 
 
@@ -1037,7 +1042,7 @@ const LandingPage = ({ onEnter }) => {
                 }}
               >
 
-                yep — reconnected
+                yep! reconnected
                 instantly after I closed
                 my laptop lid 👀
 

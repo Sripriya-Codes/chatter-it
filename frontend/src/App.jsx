@@ -6,6 +6,7 @@ import LoginScreen from './components/LoginScreen';
 import ChatWindow from './components/ChatWindow';
 import MessageInput from './components/MessageInput';
 import UserList from './components/UserList';
+import logo from './assets/logo.png';
 import './index.css';
 
 function App() {
@@ -50,6 +51,16 @@ function App() {
     socketRef.current.emit(isTyping ? 'typing:start' : 'typing:stop', username);
   }, [username, socketRef]);
 
+  const handleLogout = useCallback(() => {
+    socketRef.current.disconnect();
+    setUsername(null);
+    setMessages([]);
+    setOnlineUsers([]);
+    setTypingUsers([]);
+    setError(null);
+    socketRef.current.connect();
+  }, [socketRef]);
+
   if (showLanding) {
     return <LandingPage onEnter={() => setShowLanding(false)} />;
   }
@@ -59,8 +70,17 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h2>Real-Time Chat</h2>
-        <span>Logged in as {username}</span>
+        <div className="app-header-brand">
+          <img src={logo} alt="Chatter-It" className="app-header-logo" />
+          <span>Chatter<span className="app-header-it">-It</span></span>
+        </div>
+
+        <h2 className="app-header-title">Real-Time Chat</h2>
+
+        <div className="app-header-user">
+          <span>Logged in as {username}</span>
+          <button className="logout-btn" onClick={handleLogout}>Logout</button>
+        </div>
       </header>
       <main className="app-main">
         <UserList users={onlineUsers} typingUsers={typingUsers} />
