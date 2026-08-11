@@ -1,5 +1,5 @@
 /* =========================================================
-   CHATTER-IT — COMPLETE INDEX.CSS
+   CHATTER-IT
 ========================================================= */
 
 
@@ -166,6 +166,23 @@ body {
     blur(18px);
 }
 
+.back-to-landing {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  background: transparent;
+  border: none;
+  color: #5b6478;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.25s ease;
+}
+
+.back-to-landing:hover {
+  color: #0f9d84;
+}
 
 /* =========================================================
    WELCOME

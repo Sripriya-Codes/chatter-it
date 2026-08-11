@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import logo from '../assets/logo.png';
 
-const LoginScreen = ({ onLogin }) => {
+const LoginScreen = ({ onLogin, onBack }) => {
   const [username, setUsername] = useState('');
 
   const handleSubmit = (e) => {
@@ -15,6 +15,7 @@ const LoginScreen = ({ onLogin }) => {
   return (
     <div className="login-screen">
       <form onSubmit={handleSubmit} className="login-card">
+        <button type="button" className="back-to-landing" onClick={onBack}>← Back</button>
 
         <h1>Welcome</h1>
 

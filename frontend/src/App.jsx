@@ -65,7 +65,7 @@ function App() {
     return <LandingPage onEnter={() => setShowLanding(false)} />;
   }
 
-  if (!username) return <LoginScreen onLogin={setUsername} />;
+  if (!username) return <LoginScreen onLogin={setUsername} onBack={() => setShowLanding(true)} />;
 
   return (
     <div className="app">
