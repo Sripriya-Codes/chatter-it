@@ -1,4 +1,10 @@
-# Chatter-It
+<p align="center">
+  <img src="frontend/src/assets/logo.png" alt="Chatter-It logo" width="90"/>
+</p>
+
+<h1 align="center">Chatter-It</h1>
+
+<p align="center">Real-time chat app built with React, Node.js, Express, and Socket.io.</p>
 
 A real-time chat application built with React and Node.js, using Socket.io for instant, bidirectional communication. Includes an animated Three.js landing page, live typing indicators, online presence tracking, and persistent chat history via MongoDB.
 
@@ -22,9 +28,7 @@ A real-time chat application built with React and Node.js, using Socket.io for i
 ## How to Test the App
 
 1. Start both the backend (`npm run dev` in `backend/`) and frontend (`npm run dev` in `frontend/`).
-
-Alternatively, test the live deployed version directly at: https://chatter-it.vercel.app
-
+   Alternatively, test the live deployed version directly at: https://chatter-it.vercel.app
 2. Open `http://localhost:5173` in your browser, click **Enter Chatter-It**, then log in with any username (e.g. `user1`).
 3. Open a second browser window (or an incognito tab) to the same URL, and log in with a different username (e.g. `user2`).
 4. Send a message from one window — it should appear instantly in the other, with no refresh needed.
@@ -112,12 +116,18 @@ Runs on `http://localhost:5173` by default.
 ## Environment Variables
 
 **Backend (`backend/.env`)**
+
+```
 PORT=5050
 MONGO_URI=your_mongodb_atlas_connection_string
 CLIENT_URL=http://localhost:5173
+```
 
 **Frontend (`frontend/.env`)**
+
+```
 VITE_API_URL=http://localhost:5050
+```
 
 ## Design Decisions
 
