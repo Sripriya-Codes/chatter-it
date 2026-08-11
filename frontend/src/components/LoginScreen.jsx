@@ -15,7 +15,6 @@ const LoginScreen = ({ onLogin, onBack }) => {
   return (
     <div className="login-screen">
       <form onSubmit={handleSubmit} className="login-card">
-        <button type="button" className="back-to-landing" onClick={onBack}>← Back</button>
 
         <h1>Welcome</h1>
 
@@ -41,7 +40,9 @@ const LoginScreen = ({ onLogin, onBack }) => {
         >
           Join Chat
         </button>
-
+        <button type="button" className="back-to-landing" onClick={onBack}>
+          ← Back to Home
+        </button>
       </form>
     </div>
   );
