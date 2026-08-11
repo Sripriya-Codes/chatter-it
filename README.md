@@ -28,12 +28,16 @@ A real-time chat application built with React and Node.js, using Socket.io for i
 <tr>
 <td align="center"><b>Landing Page</b></td>
 <td align="center"><b>Sign In Page</b></td>
-<td align="center"><b>Chat Interface</b></td>
 </tr>
 <tr>
-<td><img src="screenshots/landing-page.png" width="280"/></td>
-<td><img src="screenshots/sign-in-page.png" width="280"/></td>
-<td><img src="screenshots/chat-interface.png" width="280"/></td>
+<td><img src="screenshots/landing-page.png" width="400"/></td>
+<td><img src="screenshots/sign-in-page.png" width="400"/></td>
+</tr>
+<tr>
+<td align="center" colspan="2"><b>Chat Interface</b></td>
+</tr>
+<tr>
+<td colspan="2"><img src="screenshots/chat-interface.png" width="820"/></td>
 </tr>
 </table>
 
