@@ -1,12 +1,7 @@
 <p align="center">
   <img src="frontend/src/assets/logo.png" alt="Chatter-It logo" width="90"/>
 </p>
-
-<h1 align="center">Chatter-It</h1>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Chatter--It-Real--Time%20Chat-2dd8b8?style=for-the-badge&logo=socket.io&logoColor=white" alt="Chatter-It badge"/>
-</p>
+<h1 align="center" style="margin-top: -20px;">Chatter-It</h1>
 
 A real-time chat application built with React and Node.js, using Socket.io for instant, bidirectional communication. Includes an animated Three.js landing page, live typing indicators, online presence tracking, and persistent chat history via MongoDB.
 
