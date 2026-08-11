@@ -22,6 +22,21 @@ A real-time chat application built with React and Node.js, using Socket.io for i
 - Graceful handling of disconnects and reconnects
 - Immersive Three.js particle network landing page
 
+## Screenshots
+
+<table>
+<tr>
+<td align="center"><b>Landing Page</b></td>
+<td align="center"><b>Sign In Page</b></td>
+<td align="center"><b>Chat Interface</b></td>
+</tr>
+<tr>
+<td><img src="screenshots/landing-page.png" width="280"/></td>
+<td><img src="screenshots/sign-in-page.png" width="280"/></td>
+<td><img src="screenshots/chat-interface.png" width="280"/></td>
+</tr>
+</table>
+
 ## How to Test the App
 
 1. Start both the backend (`npm run dev` in `backend/`) and frontend (`npm run dev` in `frontend/`).

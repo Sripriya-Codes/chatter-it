@@ -30,7 +30,7 @@ const LoginScreen = ({ onLogin, onBack }) => {
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          placeholder="e.g. isha_dev"
+          placeholder="e.g. Priya"
           autoFocus
         />
 

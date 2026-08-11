@@ -1019,7 +1019,7 @@ const LandingPage = ({ onEnter }) => {
               >
 
                 <b>
-                  arjun_dev
+                  Priya
                 </b>{' '}
                 
                 <div className="bubble-message">
@@ -1069,7 +1069,7 @@ const LandingPage = ({ onEnter }) => {
                 }}
               >
 
-                <b>arjun_dev</b>
+                <b>Priya</b>
 
                 <div className="bubble-message">
                 nice, testing the typing
