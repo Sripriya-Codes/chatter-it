@@ -2379,10 +2379,7 @@ body {
   font-size: 0.82rem;
 }
 
-.foot-left {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.landing footer .foot-brand {
   justify-self: start;
 }
 
@@ -2393,6 +2390,9 @@ body {
   justify-self: center;
 }
 
+.landing footer .foot-tag {
+  justify-self: end;
+}
 
 /* =========================================================
    LARGE TABLET
