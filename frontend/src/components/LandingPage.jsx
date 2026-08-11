@@ -988,7 +988,7 @@ const LandingPage = ({ onEnter }) => {
             </span>
 
             <h2>
-              This is what "instant"
+              This is what &ldquo;instant&rdquo;
               looks like
             </h2>
 
