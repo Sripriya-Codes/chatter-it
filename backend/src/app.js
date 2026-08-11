@@ -8,7 +8,7 @@ app.use(cors({ origin: process.env.CLIENT_URL || '*' }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Chat API is running');
+  res.send('Chatter-It API is running');
 });
 
 app.use('/api/messages', messageRoutes);
