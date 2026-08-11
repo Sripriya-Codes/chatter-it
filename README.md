@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="frontend/src/assets/logo.png" alt="Chatter-It logo" width="90"/>
+  <img src="frontend/src/assets/logo-icon.png" alt="Chatter-It logo" width="90"/>
 </p>
 <h1 align="center" style="margin-top: -20px;">Chatter-It</h1>
 
