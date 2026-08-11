@@ -15,11 +15,12 @@ const messageSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  status: {
-    type: String,
-    enum: ['sent', 'delivered', 'read'],
-    default: 'sent',
-  },
+  readBy: [
+    {
+      username: { type: String, required: true },
+      readAt: { type: Date, default: Date.now },
+    },
+  ],
 });
 
 module.exports = mongoose.model('Message', messageSchema);

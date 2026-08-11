@@ -595,6 +595,45 @@ body {
   gap: 0.7rem;
 }
 
+.chat-typing-indicator {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(20, 26, 36, 0.035);
+  border: 1px solid rgba(20, 26, 36, 0.1);
+  width: fit-content;
+}
+
+.chat-typing-indicator span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5b6478;
+  animation: chat-typing-float 1.2s infinite ease-in-out;
+}
+
+.chat-typing-indicator span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.chat-typing-indicator span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes chat-typing-float {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
 .message-row {
   display: flex;
 }
@@ -643,10 +682,77 @@ body {
   color: #5b6478;
 }
 
+.message-status-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .message-status {
   font-size: 0.62rem;
   color: #0f9d84;
-  text-transform: capitalize;
+}
+
+.read-info-btn {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(20, 26, 36, 0.2);
+  background: transparent;
+  color: #5b6478;
+  font-size: 0.58rem;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.read-info-btn:hover {
+  border-color: rgba(45, 216, 184, 0.6);
+  color: #0f9d84;
+}
+
+.read-receipts-popover {
+  position: relative;
+  margin-top: 6px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(20, 26, 36, 0.1);
+  box-shadow: 0 8px 20px rgba(20, 26, 36, 0.1);
+  font-size: 0.72rem;
+  min-width: 160px;
+}
+
+.read-receipts-popover p {
+  margin: 0;
+  color: #5b6478;
+}
+
+.read-receipts-popover ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.read-receipts-popover li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #141a24;
+}
+
+.read-receipts-popover li span:last-child {
+  color: #5b6478;
+  font-size: 0.68rem;
 }
 
 .message-input {

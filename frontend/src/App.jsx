@@ -26,7 +26,18 @@ function App() {
     const socket = socketRef.current;
     socket.emit('user:join', username);
 
-    socket.on('message:receive', (msg) => setMessages((prev) => [...prev, msg]));
+    socket.on('message:receive', (msg) => {
+      setMessages((prev) => [...prev, msg]);
+    });
+
+    socket.on('message:readBulkUpdate', (updates) => {
+      setMessages((prev) =>
+        prev.map((m) => {
+          const update = updates.find((u) => u.messageId === m._id);
+          return update ? { ...m, readBy: update.readBy } : m;
+        })
+      );
+    });
     socket.on('users:online', setOnlineUsers);
     socket.on('typing:update', ({ username: u, isTyping }) => {
       setTypingUsers((prev) => (isTyping ? [...new Set([...prev, u])] : prev.filter((x) => x !== u)));
@@ -36,6 +47,7 @@ function App() {
 
     return () => {
       socket.off('message:receive');
+      socket.off('message:readBulkUpdate');
       socket.off('users:online');
       socket.off('typing:update');
       socket.off('error:message');
@@ -86,7 +98,7 @@ function App() {
         <UserList users={onlineUsers} typingUsers={typingUsers} />
         <section className="chat-section">
           {error && <div className="error-banner">{error}</div>}
-          <ChatWindow messages={messages} currentUser={username} />
+          <ChatWindow messages={messages} currentUser={username} typingUsers={typingUsers} />
           <MessageInput onSend={handleSend} onTyping={handleTyping} />
         </section>
       </main>

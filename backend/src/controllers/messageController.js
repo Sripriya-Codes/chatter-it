@@ -17,7 +17,7 @@ const createMessage = async (req, res) => {
     if (!username || !text) {
       return res.status(400).json({ success: false, error: 'Username and text are required' });
     }
-    const message = await Message.create({ username, text });
+    const message = await Message.create({ username, text, readBy: [] });
     res.status(201).json({ success: true, data: message });
   } catch (err) {
     res.status(500).json({ success: false, error: 'Failed to save message' });
